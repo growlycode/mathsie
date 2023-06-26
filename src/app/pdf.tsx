@@ -79,8 +79,8 @@ export const MathPDF = ({ numberToGenerate, from, to }: MathPDFProps) => {
 
     return (
         <Document>
-            {pages.map((p: Operation[]) => (
-            <Page size="A4" style={styles.page}>
+            {pages.map((p: Operation[], pi: number) => (
+            <Page  key={`p-${pi}`} size="A4" style={styles.page}>
                 {p.map((exp: Operation, i: number) => {
                     return <View key={`t-${i}`} style={styles.row}>
                         <View style={styles.col}>

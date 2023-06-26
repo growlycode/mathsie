@@ -17,9 +17,9 @@ const Home = () => {
   const [to, setTo] = useState<number>(20);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
-      <div className='flex md:flex-wrap gap-1 w-full grow  gap-3'>
+    <main className="flex min-h-screen flex-col justify-between p-24">
+      <h1 className='text-xl pb-5'>Addition and subtraction</h1>
+      <div className='flex md:flex-wrap gap-1 w-full grow gap-3'>
         <div className="flex gap-2.5 flex-col py-4">
           <label className='flex gap-1.5 justify-between'>
             <span className="pr-2.5">Number to generate</span>
