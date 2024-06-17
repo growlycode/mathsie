@@ -22,8 +22,5 @@ export const NumCheck = ({ num, fieldName }: NumCheckProps) => {
 
             return <><input key={`i` + num} checked={field.value?.includes(num)} type="checkbox" value={num} onChange={(e) => onChange(e.currentTarget.checked)} /><span >{num}</span></>;
         }
-        } name={fieldName}>
-
-
-    </Controller>
+        } name={fieldName}/>
 }
